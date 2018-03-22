@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.mat-form-field-ripple{
+    background-color: #003665 !important;
+}
+
+.mat-focused .mat-form-field-label{
+    color:#003665 !important;
+}
+
+body{
+    margin: 0 auto;
+    background: linear-gradient(to right,  #ffffff,#ffffff, #e4e4e4);   
+}
+
+#content{
+    color:transparent;
+}
+
+.mat-raised-button.mat-primary{
+    background: linear-gradient(to right,  #003665, #3570a3, #003665) !important;
+}
+
+.mat-toolbar.mat-primary{
+    background-color: #003665 !important;
+}

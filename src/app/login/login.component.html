@@ -1,0 +1,31 @@
+<div class="login-container">
+  <div class="login-banner" [@banner1]="showing" [@banner2]="showing">
+      <div class="login-banner-mandiri">
+          <img src="assets/mandiri-logo.png" alt=""/>
+      </div>
+      <div class="login-banner-utama-finance">
+          <img src="assets/muflogo.png" alt=""/>
+      </div>
+  </div>
+  <div class="login-appname">
+    <!-- <span class="login-appname-m">/m</span><span  class="login-appname-uf">uf.</span>portal/ -->
+    <img src="assets/muftech.png" alt=""/>
+  </div>
+  <form class="login-form" (ngSubmit)="login()">
+    <mat-form-field class="login-form-input">
+        
+        <i matPrefix class="fa fa-smile-o vertical-align-middle padding-bottom-3" aria-hidden="true"></i>
+        <input type="text" matInput placeholder="Username" [(ngModel)]="user.username" name="Username" required>
+    </mat-form-field>
+    <mat-form-field  class="login-form-input">
+      <i matPrefix class="fa fa-lock vertical-align-middle padding-bottom-3" aria-hidden="true"></i>
+        <input type="password" matInput placeholder="Password" [(ngModel)]="user.password" name="Password" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary">LOGIN</button>
+    <div class="other-control">
+        <a mat-button routerLink=".">Sign up</a>
+        <a mat-button routerLink=".">Forgot password?</a>
+    </div>
+  </form>
+  <div class="login-message">{{message}}</div>
+</div>
